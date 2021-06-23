@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap');
-
-
-body{
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    font-size: 35px;
-    color: #ffffff;
-    background-image: url('/workspace/Simon_Game/simon_game/simon-background.jpg');
-}
