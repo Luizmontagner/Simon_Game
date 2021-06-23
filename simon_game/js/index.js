@@ -22,14 +22,14 @@ let on = false;
 let win;
 
 // selected all css ID's using querySelector
-const turnCounter = document.querySelector("#turn");
-const topLeft = document.querySelector("#topleft");
-const topRight = document.querySelector("#topright");
-const bottomLeft = document.querySelector("#bottomleft");
-const bottomRight = document.querySelector("#bottomright");
-const jediModeButton = document.querySelector("#jediMode");
-const onButton = document.querySelector("#on");
-const startButton = document.querySelector("#start");
+let turnCounter = document.querySelector("#turn");
+let topLeft = document.querySelector("#topleft");
+let topRight = document.querySelector("#topright");
+let bottomLeft = document.querySelector("#bottomleft");
+let bottomRight = document.querySelector("#bottomright");
+let jediModeButton = document.querySelector("#jediMode");
+let onButton = document.querySelector("#on");
+let startButton = document.querySelector("#start");
 
 jediModeButton.addEventListener('click', (event) => {
     if (jediModeButton.checked == true) {
@@ -69,4 +69,71 @@ function play() {
     for (let i = 0; i < 20; i++) {
         order.push(Math.floor(Math.random() * 4) + 1)
     }
+    compTurn = true;
+    intervalId = setInterval(gameTurn, 800);
+};
+
+function gameTurn() {
+    on = false;
+    if (flash == turn) {
+        clearInterval(intervalId); 
+        compTurn = false;
+        clearColor();
+        on = true;
+    }
+    if (compTurn) {
+        clearColor();
+        setTimeout(() => {
+            if(order[flash] == 1) one();
+            if(order[flash] == 21) two();
+            if(order[flash] == 3) three();
+            if(order[flash] == 4) four();
+            flash++;
+        }, 200);
+    }    
+  };
+
+function one() {
+    if (noise) {
+        let audio = document.getElementById('clip1');
+        audio.play();
+    }
+    noise = true;
+    topLeft.style.backgroundColor = 'lightgreen';
+};
+
+function two() {
+    if (noise) {
+        let audio = document.getElementById('clip2');
+        audio.play();
+    }
+    noise = true;
+    topRight.style.backgroundColor = 'tomato';
+};
+
+function three() {
+    if (noise) {
+        let audio = document.getElementById('clip3');
+        audio.play();
+    }
+    noise = true;
+    bottomLeft.style.backgroundColor = 'yellow';
+};
+
+function four() {
+    if (noise) {
+        let audio = document.getElementById('clip4');
+        audio.play();
+    }
+    noise = true;
+    bottomRight.style.backgroundColor = 'lightskyblue';
+};
+
+function clearColor() {
+    topLeft.style.backgroundColor = 'darkgreen';
+    topRight.style.backgroundColor = 'darkred';
+    bottomLeft.style.backgroundColor = 'goldenrod';
+    bottomRight.style.backgroundColor = 'darkblue';
 }
+
+top
