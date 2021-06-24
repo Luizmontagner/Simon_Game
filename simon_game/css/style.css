@@ -2,7 +2,7 @@
 
 body{
     
-    /* background-image: url('/workspace/Simon_Game/pictures/background-image.jpg') ;    */
+    background-image: linear-gradient(300deg, #207ba5 10%, #000000 90%);
     background-size: cover; 
 }
 
@@ -12,7 +12,7 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #262626;
+    
     margin-bottom: 100px;
 }
 
@@ -48,11 +48,11 @@ body{
 .button {
   border-radius: 50% !important;
   font-size: 1.5em;
-  background-color: rgba(27, 76, 122, 0.548);
+  background-color: #fff;
 }
 
 .button:hover{
-    background-color: rgba(122, 27, 27, 0.548);
+    background-color: #BBC2CC;
 }
 
 #switches {
@@ -86,6 +86,7 @@ body{
   margin-left: 35px;
   margin-top: 40px;
   margin-bottom: 30px;
+  color: #1291CF;
 }
 
 #turn {
@@ -114,8 +115,8 @@ body{
   border-width: 10px;
   margin: auto;
   margin-top: 60px;
-  box-shadow: 8px 8px 15px 5px #d6b41b;
-  border-color: rgb(189, 145, 0);
+  box-shadow: 8px 8px 15px 5px #C0C0C0;
+  border-color: #BBC2CC;
 }
 
 /* left side (color green) */
@@ -197,7 +198,7 @@ body{
 /* small circle */
 #inner-circle {
   position: absolute;
-  background: grey;
+  background: #000;
   border-radius: 50%;
   height: 250px;
   width: 250px;
