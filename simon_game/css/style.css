@@ -6,6 +6,40 @@ body{
     background-size: cover; 
 }
 
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #262626;
+    margin-bottom: 100px;
+}
+
+/* Hamburger Button */
+.btn-color{
+    color: #fff;
+}
+
+#navbar-brand {
+    padding-left: 10px;
+}
+
+
+#navigation li a {
+    padding: 0;
+    margin-right: 30px;
+    line-height: 60px;
+    font-size: 22px;  
+    font-weight: 700;
+    margin-left: 20px;
+    width: 100%;
+    color: #fff;
+}
+
+
+/* Simon game circle */
+
 .toggle{
     margin-left: 20px;
     margin-right: 20px;
