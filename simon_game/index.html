@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+<!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   
   <!-- Audio taken from freeCodeCamp.org tutorial -->
   <audio id="clip1">
@@ -24,6 +26,37 @@
 </head>
 
 <body>
+ <!-- Bootstrap Navbar -->
+<nav class="navbar container-fluid fixed-top navbar-expand-lg">
+    <div class="container">
+        <a  aria-label="Logo" href="#"></a>
+    <!-- Toggle button -->
+        <button 
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse" 
+            data-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-1x btn-color"></i>
+        </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+    <!-- Links -->    
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navigation">
+            <li class="nav-item mr-2 flex-column"> 
+                <a class="nav-link" href="#home" aria-label="Home">Home</a>
+            </li>
+            <li class="nav-item mr-2 flex-column"> 
+                <a class="nav-link" href="#classes" aria-label="Classes">Scores</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<!-- freeCodeCamp.org code -->
   <div id="outer-circle">
     <div id="topleft"></div>
     <div id="topright"></div>

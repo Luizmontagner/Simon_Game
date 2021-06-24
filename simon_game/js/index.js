@@ -31,7 +31,7 @@ let jediModeButton = document.querySelector("#jediMode");
 let onButton = document.querySelector("#on");
 let startButton = document.querySelector("#start");
 
-jediModeButton.addEventListener('click', (event) => {
+jediModeButton.addEventListener('click', () => {
     if (jediModeButton.checked == true) {
       jediMode = true;  
     } else {
@@ -39,7 +39,7 @@ jediModeButton.addEventListener('click', (event) => {
     }
 });
 
-onButton.addEventListener('click', (event) => {
+onButton.addEventListener('click', () => {
     if (onButton.checked == true) {
         on = true;
         turnCounter.innerHTML = 'ON';
@@ -51,7 +51,7 @@ onButton.addEventListener('click', (event) => {
     }
 });
 
-startButton.addEventListener('click', (event) =>{
+startButton.addEventListener('click', () => {
     if (on = true, win = true) {
         play();
     }
@@ -85,7 +85,7 @@ function gameTurn() {
         clearColor();
         setTimeout(() => {
             if(order[flash] == 1) one();
-            if(order[flash] == 21) two();
+            if(order[flash] == 2) two();
             if(order[flash] == 3) three();
             if(order[flash] == 4) four();
             flash++;
@@ -94,12 +94,12 @@ function gameTurn() {
   };
 
 function one() {
-    if (noise) {
-        let audio = document.getElementById('clip1');
-        audio.play();
-    }
-    noise = true;
-    topLeft.style.backgroundColor = 'lightgreen';
+  if (noise) {
+    let audio = document.getElementById("clip1");
+    audio.play();
+  }
+  noise = true;
+  topLeft.style.backgroundColor = "lightgreen";
 };
 
 function two() {
@@ -136,4 +136,107 @@ function clearColor() {
     bottomRight.style.backgroundColor = 'darkblue';
 }
 
-top
+function flashColor() {
+    topLeft.style.backgroundColor = 'lightgreen';
+    topRight.style.backgroundColor = 'tomato';
+    bottomLeft.style.backgroundColor = 'yellow';
+    bottomRight.style.backgroundColor = 'lighskyblue';
+}
+
+// this will check if the player got the right answer
+topLeft.addEventListener('click', () => {
+    if (on) {
+        playerOrder.push(1);
+        check();
+        one();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+topRight.addEventListener('click', () => {
+    if (on) {
+        playerOrder.push(2);
+        check();
+        two();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bottomLeft.addEventListener('click', () => {
+    if (on) {
+        playerOrder.push(3);
+        check();
+        three();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bottomRight.addEventListener('click', () => {
+    if (on) {
+        playerOrder.push(4);
+        check();
+        four();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+function check() {
+    if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
+     good = false;
+
+     if (playerOrder.length == 20 && good) {
+         winGame();
+     }
+
+     if (good == false) {
+         flashColor();
+         turnCounter.innerHTML = 'NO!';
+         setTimeout(() => {
+             turnCounter.innerHTML = turn;
+             clearColor();
+
+             if (jediMode) {
+                 play();
+             }else {
+                 compTurn = true;
+                 flash = 0;
+                 playerOrder = [];
+                 good - true;
+                 intervalId = setInterval(gameTurn, 800);
+             }
+         }, 800);
+         noise = false;
+     }
+
+     if (turn == playerOrder.length && good && !win) {
+         turn++;
+         playerOrder = [];
+         compTurn = true;
+         flash = 0;
+         turnCounter.innerHTML = turn;
+         intervalId = setInterval(gameTurn, 800);
+     }
+};
+
+function winGame() {
+    flashColor();
+    turnCounter.innerHTML = "WIN!";
+    on = false;
+    win = true;
+};
