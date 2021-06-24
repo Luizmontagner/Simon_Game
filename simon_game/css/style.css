@@ -47,8 +47,39 @@ body{
 
 .button {
   border-radius: 50% !important;
-  font-size: 1.5em;
+  font-size: 1.6em;
   background-color: #fff;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 9px #999;
+  background-color: rgb(182, 182, 182);
+  border: none;
+  cursor: pointer;
+  outline: none;
+} 
+
+/* .button {
+  padding: 15px 25px;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(182, 182, 182);
+  border: none;
+  border-radius: 50% !important;
+  box-shadow: 0 9px #999;
+} */
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .button:hover{
