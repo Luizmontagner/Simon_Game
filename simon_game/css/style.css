@@ -12,8 +12,16 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
-    
+    font-family: 'Big Shoulders Stencil Display', cursive;
     margin-bottom: 100px;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.scores:hover {
+    text-decoration: underline;
 }
 
 /* Hamburger Button */
@@ -61,30 +69,17 @@ body{
   outline: none;
 } 
 
-/* .button {
-  padding: 15px 25px;
-  font-size: 1.5em;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: rgb(182, 182, 182);
-  border: none;
-  border-radius: 50% !important;
-  box-shadow: 0 9px #999;
-} */
-
-.button:hover {background-color: #3e8e41}
-
 .button:active {
-  background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 .button:hover{
     background-color: #BBC2CC;
+    color: #1291CF;
+    font-weight: 600;
 }
+
 
 #switches {
   position: absolute;
@@ -95,19 +90,23 @@ body{
 
 .text2 {
   position: absolute;
-  margin-left: 83px;
-  margin-top: 197px;
+  margin-left: 92px;
+  margin-top: 200px;
+  color: #1291CF;
+  font-weight: 900;
 }
 
 .text1 {
   position: absolute;
-  margin-left: 19px;
-  margin-top: 142px;
+  margin-left: 40px;
+  margin-top: 152px;
+  color: #1291CF;
+  font-weight: 900;
 }
 
 
 .text1 span:last-child {
-  padding-left: 70px;
+  padding-left: 100px;
 }
 
 #title {
@@ -128,8 +127,8 @@ body{
   font-size: 20px;
   height: 30px;
   width: 50px;
-  margin-left: 90px;
-  margin-top: 170px;
+  margin-left: 92px;
+  margin-top: 175px;
   text-align: center;
   vertical-align: middle;
   line-height: 30px;

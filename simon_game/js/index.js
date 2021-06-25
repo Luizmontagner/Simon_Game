@@ -12,8 +12,8 @@ let good;
 let compTurn;
 
 let intervalId;
-// it will check if the player selected the Jedi Mode
-let jediMode = false;
+// it will check if the player selected the strict mode
+let strict = false;
 
 let noise = true;
 // it will check if the game is on or off
@@ -21,21 +21,24 @@ let on = false;
 // it will say if the player won the game
 let win;
 
+// it keep the score of the player displayed 
+let myText = "Enter your name";
+
 // selected all css ID's using querySelector
 let turnCounter = document.querySelector("#turn");
 let topLeft = document.querySelector("#topleft");
 let topRight = document.querySelector("#topright");
 let bottomLeft = document.querySelector("#bottomleft");
 let bottomRight = document.querySelector("#bottomright");
-let jediModeButton = document.querySelector("#jediMode");
+let strictButton = document.querySelector("#strict");
 let onButton = document.querySelector("#on");
 let startButton = document.querySelector("#start");
 
-jediModeButton.addEventListener('click', () => {
-    if (jediModeButton.checked == true) {
-      jediMode = true;  
+strictButton.addEventListener('click', () => {
+    if (strictButton.checked == true) {
+      strict = true;  
     } else {
-        jediMode = false;
+        strict = false;
     }
 });
 
@@ -211,7 +214,7 @@ function check() {
              turnCounter.innerHTML = turn;
              clearColor();
 
-             if (jediMode) {
+             if (strict) {
                  play();
              }else {
                  compTurn = true;
@@ -237,6 +240,9 @@ function check() {
 function winGame() {
     flashColor();
     turnCounter.innerHTML = "WIN!";
+    alert (myText);
     on = false;
     win = true;
 };
+
+
