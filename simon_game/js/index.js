@@ -45,7 +45,7 @@ strictButton.addEventListener('click', () => {
 onButton.addEventListener('click', () => {
     if (onButton.checked == true) {
         on = true;
-        turnCounter.innerHTML = 'ON';
+        turnCounter.innerHTML = 'ON!';
     } else {
         on = false;
         turnCounter.innerHTML = "";
@@ -203,7 +203,7 @@ function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
      good = false;
 
-     if (playerOrder.length == 20 && good) {
+     if (playerOrder.length == 15 && good) {
          winGame();
      }
 
