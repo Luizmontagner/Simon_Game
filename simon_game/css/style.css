@@ -241,3 +241,26 @@ body{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+.ranking{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Stencil Display', cursive; 
+    margin-top: 90px;
+}
+
+.ranking-name{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.ranking-score{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.ranking-list{
+    border: 1px solid red;
+    margin-bottom: 8px;
+}
