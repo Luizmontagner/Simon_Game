@@ -6,7 +6,6 @@
   <title>Simon Game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet" type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
 <!-- Bootstrap Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <!-- Font Awesome icons -->
@@ -25,10 +24,10 @@
   	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
   </audio>
   <audio id="clip5">
-  	<source src="audios/beep1.mp3"></source>
+  	<source src="simon_game/audios/beep1.mp3"></source>
   </audio>
    <audio id="clip6">
-  	<source src="audios/beep2.mp3"></source>
+  	<source src="simon_game/audios/beep2.mp3"></source>
   </audio>
 
   
@@ -56,10 +55,10 @@
     <!-- Links -->    
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navigation">
             <li class="nav-item mr-2 flex-column"> 
-                <a class="nav-link home" href="#home" aria-label="Home">Home</a>
+                <a class="nav-link home" href="#" aria-label="Home">Home</a>
             </li>
             <li class="nav-item scores mr-2 flex-column"> 
-                <a class="nav-link" href="#scores" aria-label="Classes">Score</a>
+                <a class="nav-link" href="#ranking" aria-label="Classes">Score</a>
             </li>
         </ul>
     </div>
@@ -92,7 +91,7 @@
 
 
  <!-- I need to implement new code to display the players scores automatically-->
- <section class="ranking">
+ <section class="ranking" id="ranking">
    <h1>Ranking</h1>
    <div class="container">
   <div class="row">
