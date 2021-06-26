@@ -36,22 +36,26 @@ let startButton = document.querySelector("#start");
 
 strictButton.addEventListener('click', () => {
     if (strictButton.checked == true) {
-      strict = true;  
+      strict = true;
+      let audio = document.getElementById("clip6");
+      audio.play();  
     } else {
         strict = false;
     }
 });
 
 onButton.addEventListener('click', () => {
-    if (onButton.checked == true) {
-        on = true;
-        turnCounter.innerHTML = 'ON!';
-    } else {
-        on = false;
-        turnCounter.innerHTML = "";
-        clearColor();
-        clearInterval(intervalId);
-    }
+  if (onButton.checked == true) {
+    on = true;
+    turnCounter.innerHTML = "ON!";
+    let audio = document.getElementById("clip5");
+    audio.play();
+  } else {
+    on = false;
+    turnCounter.innerHTML = "";
+    clearColor();
+    clearInterval(intervalId);
+  }
 });
 
 startButton.addEventListener('click', () => {
