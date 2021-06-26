@@ -55,7 +55,7 @@ onButton.addEventListener('click', () => {
 });
 
 startButton.addEventListener('click', () => {
-    if (on = true, win = true) {
+    if (on || win) {
         play();
     }
 });
