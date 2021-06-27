@@ -74,11 +74,11 @@ function play() {
     turnCounter.innerHTML = 1;
     good = true;
     for (let i = 0; i < 20; i++) {
-        order.push(Math.floor(Math.random() * 4) + 1)
+        order.push(Math.floor(Math.random() * 4) + 1);
     }
     compTurn = true;
     intervalId = setInterval(gameTurn, 800);
-};
+}
 
 function gameTurn() {
     on = false;
@@ -98,7 +98,7 @@ function gameTurn() {
             flash++;
         }, 200);
     }    
-  };
+  }
 
 function one() {
   if (noise) {
@@ -107,7 +107,7 @@ function one() {
   }
   noise = true;
   topLeft.style.backgroundColor = "lightgreen";
-};
+}
 
 function two() {
     if (noise) {
@@ -116,7 +116,7 @@ function two() {
     }
     noise = true;
     topRight.style.backgroundColor = 'tomato';
-};
+}
 
 function three() {
     if (noise) {
@@ -125,7 +125,7 @@ function three() {
     }
     noise = true;
     bottomLeft.style.backgroundColor = 'yellow';
-};
+}
 
 function four() {
     if (noise) {
@@ -134,7 +134,7 @@ function four() {
     }
     noise = true;
     bottomRight.style.backgroundColor = 'lightskyblue';
-};
+}
 
 function clearColor() {
     topLeft.style.backgroundColor = 'darkgreen';
@@ -224,7 +224,7 @@ function check() {
                  compTurn = true;
                  flash = 0;
                  playerOrder = [];
-                 good - true;
+                 good = true;
                  intervalId = setInterval(gameTurn, 800);
              }
          }, 800);
@@ -239,7 +239,7 @@ function check() {
          turnCounter.innerHTML = turn;
          intervalId = setInterval(gameTurn, 800);
      }
-};
+}
 
 function winGame() {
     flashColor();
@@ -247,6 +247,6 @@ function winGame() {
     alert (myText);
     on = false;
     win = true;
-};
+}
 
 
