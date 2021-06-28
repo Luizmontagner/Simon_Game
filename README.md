@@ -1,4 +1,4 @@
-# Simon Game 1
+# Simon Game !
 ![Mokeup image]()
 
 ## Goal for this project

@@ -122,8 +122,8 @@ body{
 #turn {
   position: absolute;
   background: #330000;
-  color: red;
-  font-family: courier;
+  color: #ff0000;
+  font-family: 'Big Shoulders Stencil Display', cursive;
   font-size: 20px;
   height: 30px;
   width: 50px;
@@ -145,8 +145,7 @@ body{
   border-width: 10px;
   margin: auto;
   margin-top: 60px;
-  box-shadow: 8px 8px 15px 5px #C0C0C0;
-  border-color: #BBC2CC;
+  box-shadow: 8px 8px 15px 5px #888888;
 }
 
 /* left side (color green) */
@@ -157,7 +156,7 @@ body{
   border-radius: 250px 0 0 0;
   -moz-border-radius: 250px 0 0 0;
   -webkit-border-radius: 250px 0 0 0;
-  background: darkgreen;
+  background: #006400;
   top: 50%;
   left: 50%;
   margin: -250px 0px 0px -250px;
@@ -176,7 +175,7 @@ body{
   border-radius: 0 250px 0 0;
   -moz-border-radius: 0 250px 0 0;
   -webkit-border-radius: 0 250px 0 0;
-  background: darkred;
+  background: #8b0000;
   top: 50%;
   left: 50%;
   margin: -250px 0px 0px 0px;
@@ -195,7 +194,7 @@ body{
   border-radius: 0 0 0 250px;
   -moz-border-radius: 0 0 0 250px;
   -webkit-border-radius: 0 0 0 250px;
-  background: goldenrod;
+  background: #daa520;
   top: 50%;
   left: 50%;
   margin: 0px -250px 0px -250px;
@@ -214,7 +213,7 @@ body{
   border-radius: 0 0 250px 0;
   -moz-border-radius: 0 0 250px 0;
   -webkit-border-radius: 0 0 250px 0;
-  background: darkblue;
+  background: #00008b;
   top: 50%;
   left: 50%;
   margin: 0px 0px -250px 0px;
@@ -261,6 +260,6 @@ body{
 }
 
 .ranking-list{
-    border: 1px solid red;
+    border: 1px solid #ff0000;
     margin-bottom: 8px;
 }
