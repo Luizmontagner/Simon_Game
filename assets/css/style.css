@@ -3,6 +3,7 @@
 
 /* html {
   box-sizing: border-box;
+  
 }
 
 *,
@@ -11,15 +12,12 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-} */
+} */ */
 
 body {
   display: flex;
   justify-content: center;
   font-family: 'Big Shoulders Stencil Display', cursive;
-  /* background-image: url('/workspace/Simon_Game/wall-bg.jpg');
-  background-size: cover; 
-  background-attachment: fixed; */
   background-color: rgb(77, 62, 62);
 }
 

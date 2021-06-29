@@ -37,7 +37,7 @@ let startButton = document.querySelector("#start");
 strictButton.addEventListener('click', () => {
     if (strictButton.checked == true) {
       strict = true;
-      let audio = document.getElementById("clip6");
+      let audio = document.getElementById("clip2");
       audio.play();  
     } else {
         strict = false;
@@ -48,7 +48,7 @@ onButton.addEventListener('click', () => {
   if (onButton.checked == true) {
     on = true;
     turnCounter.innerHTML = "ON!";
-    let audio = document.getElementById("clip5");
+    let audio = document.getElementById("clip2");
     audio.play();
   } else {
     on = false;
