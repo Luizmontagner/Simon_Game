@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
 
 
-html {
+/* html {
   box-sizing: border-box;
 }
 
@@ -11,15 +11,16 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-}
+} */
 
 body {
   display: flex;
   justify-content: center;
   font-family: 'Big Shoulders Stencil Display', cursive;
-    background-image: url('/workspace/Simon_Game/assets/pictures/wall-bg.jpg');
-    background-size: cover; 
-    background-attachment: fixed;
+  /* background-image: url('/workspace/Simon_Game/wall-bg.jpg');
+  background-size: cover; 
+  background-attachment: fixed; */
+  background-color: rgb(77, 62, 62);
 }
 
 /* Navbar */
@@ -29,7 +30,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Big Shoulders Stencil Display', cursive;
-    margin-bottom: 100px;
+    margin-bottom: 500px;
 }
 
 .home:hover {
@@ -62,17 +63,23 @@ body {
 }
 
 
-/* Simon game circle */
+/* Simon game */
 
 .toggle{
     margin-left: 20px;
     margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 5px #666;    
+}
+
+.toggle:active {
+  transform: translateY(4px);
 }
 
 .button {
   border-radius: 65%;
   font-size: 2.6em;
-  background-color: #fff;
   color: #fff;
   box-shadow: 0 9px #999;
   background-color: rgb(182, 182, 182);
@@ -90,9 +97,7 @@ body {
 .button:hover{
     background-color: #BBC2CC;
     color: #1291CF;
-    font-weight: 600;
 }
-
 
 #switches {
   position: absolute;
@@ -148,7 +153,6 @@ body {
 }
 
 
-
 .game {
   position: absolute;
   top: 50%;
@@ -160,16 +164,13 @@ body {
   display: none !important;
 }
 
-header {
+.heading {
+  font-size: 3em;
   text-align: center;
-  font-size: 18px;
+  margin-top: 150px;
   font-family: 'Big Shoulders Stencil Display', cursive;
   color: #1291CF;
   text-transform: uppercase;
-}
-
-.heading {
-  font-size: 3em;
 }
 
 .tile-container {
