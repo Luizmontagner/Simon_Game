@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
 
 
-/* html {
-  box-sizing: border-box;
-  
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-} */ */
-
 body {
   display: flex;
   justify-content: center;
@@ -65,6 +52,7 @@ body {
 
 /* Simon game */
 
+/* switches */
 .toggle{
     margin-left: 20px;
     margin-right: 20px;
@@ -74,11 +62,11 @@ body {
 }
 
 .toggle:active {
-
   transform: translateY(4px);
 }
 
 .button {
+  font-family: 'Big Shoulders Stencil Display', cursive;
   border-radius: 65%;
   font-size: 2.6em;
   color: #fff;
@@ -109,14 +97,15 @@ body {
 
 .text2 {
   margin-left: 170px;
-  margin-top: 80px;
+  margin-top: 60px;
   color: #1291CF;
   font-weight: 900;
   font-size: 1.4em;
+  font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
 .text1 {
-  
+  font-family: 'Big Shoulders Stencil Display', cursive;
   margin-left: 68px;
   margin-top: 120px;
   color: #1291CF;
@@ -130,6 +119,7 @@ body {
   margin-left: 80px;
 }
 
+/* Title */
 #title {
   font-family: 'Big Shoulders Stencil Display', cursive;  
   margin-bottom: 60px;
@@ -140,6 +130,7 @@ body {
   color: #1291CF;
 }
 
+/* Score */
 #turn {
   position: absolute;
   background: #330000;
@@ -176,6 +167,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Squares */
 .tile-container {
   display: grid;
   grid-template-rows: 180px 180px;
@@ -190,75 +182,77 @@ body {
   pointer-events: none;
 }
 
+
+/* Green Square */
 #topleft {
   background-color: #7fba00;
   box-shadow: 0 0 0 1px #7fba00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #638f05, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/* Green Square */
 #topleft:hover,
 #topleft:focus {
   background-color: #8cc218;
   box-shadow: 0 0 0 1px #8cc218 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #74a802, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6)
 }
-
+/* Green Square */
 #topleft:active,
 #topleft.activated {
   box-shadow: 0 0 0 1px #a0ea00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #a0ea00;
   transform: translateY(10px);
 }
-
+/* Red Square */
 #topright {
   background-color: #f25022;
   box-shadow: 0 0 0 1px #f25022 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c93a12, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/* Red Square */
 #topright:hover,
 #topright:focus {
   background-color: #ff451a;
   box-shadow: 0 0 0 1px #FF3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
 }
-
+/* Red Square */
 #topright:active,
 #topright.activated {
   box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #ff5c36;
   transform: translateY(10px);
 }
-
+/* Blue Square */
 #bottomright {
   background-color: #00a4ef;
   box-shadow: 0 0 0 1px #00a4ef inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0883bc, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/* Blue Square */
 #bottomright:hover,
 #bottomright:focus {
   background-color: #139ddd;
   box-shadow: 0 0 0 1px #139ddd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #0c7cb0, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
 }
-
+/* Blue Square */
 #bottomright:active,
 #bottomright.activated {
   box-shadow: 0 0 0 1px #2bbcff inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #2bbcff;
   transform: translateY(10px);
 }
-
+/* Yellow Square */
 #bottomleft {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c28e07, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/* Yellow Square */
 #bottomleft:hover,
 #bottomleft:focus {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c28e07, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
 }
-
+/* Yellow Square */
 #bottomleft:active,
 #bottomleft.activated {
   box-shadow: 0 0 0 1px #ffca3d inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
@@ -291,120 +285,12 @@ body {
   }
 }
 
-/* big circle */
-/* #outer-circle {
-  background: #385a94;
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
-  position: relative;
-  border-style: solid;
-  border-width: 10px;
-  margin: auto;
-  margin-top: 60px;
-  box-shadow: 8px 8px 15px 5px #888888;
-} */
-
-/* left side (color green) */
-/* #topleft {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 250px 0 0 0;
-  -moz-border-radius: 250px 0 0 0;
-  -webkit-border-radius: 250px 0 0 0;
-  background: #006400;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0px 0px -250px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-} */
-
-/* right side (color red) */
-/* #topright {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 0 250px 0 0;
-  -moz-border-radius: 0 250px 0 0;
-  -webkit-border-radius: 0 250px 0 0;
-  background: #8b0000;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0px 0px 0px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-} */
-
-/* left side (color yellow) */
-/* #bottomleft {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 0 0 0 250px;
-  -moz-border-radius: 0 0 0 250px;
-  -webkit-border-radius: 0 0 0 250px;
-  background: #daa520;
-  top: 50%;
-  left: 50%;
-  margin: 0px -250px 0px -250px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-} */
-
-/* right side (color blue) */
-/* #bottomright {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 0 0 250px 0;
-  -moz-border-radius: 0 0 250px 0;
-  -webkit-border-radius: 0 0 250px 0;
-  background: #00008b;
-  top: 50%;
-  left: 50%;
-  margin: 0px 0px -250px 0px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-} */
-
-/* small circle */
-/* #inner-circle {
-  position: absolute;
-  background: #000;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  border-style: solid;
-  border-width: 10px;
-  top: 50%;
-  left: 50%;
-  margin: -125px 0px 0px -125px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-} */
-
+/* Ranking Section */
 .ranking{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
     font-family: 'Big Shoulders Stencil Display', cursive; 
-    
-    
 }
 
 .ranking-name{
@@ -422,9 +308,5 @@ body {
 .ranking-list{
     border: 1px solid #ff0000;
     margin-bottom: 8px;
-    color: #fff;
-}
-
-tr{
     color: #fff;
 }
