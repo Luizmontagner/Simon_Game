@@ -171,6 +171,7 @@ to let the user exactly know where they are located on the site. For this to wor
 * [Color Hex](https://www.color-hex.com/)
 * [Am I Responsive](http://ami.responsivedesign.is/)
 * [Imgur](https://imgur.com/)
+* [JSHint](https://jshint.com/)
 
 [Back to Top](#table-of-contents)
 
