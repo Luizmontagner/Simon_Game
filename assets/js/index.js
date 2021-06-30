@@ -136,6 +136,7 @@ function four() {
     bottomRight.style.backgroundColor = 'lightskyblue';
 }
 
+// this will return the color to the original
 function clearColor() {
     topLeft.style.backgroundColor = 'darkgreen';
     topRight.style.backgroundColor = 'darkred';
@@ -159,7 +160,7 @@ topLeft.addEventListener('click', () => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 700); // this will set the time before the next color blinks
         }
     }
 });
@@ -172,7 +173,7 @@ topRight.addEventListener('click', () => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 700); // this will set the time before the next color blinks
         }
     }
 });
@@ -185,7 +186,7 @@ bottomLeft.addEventListener('click', () => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 700); // this will set the time before the next color blinks
         }
     }
 });
@@ -198,7 +199,7 @@ bottomRight.addEventListener('click', () => {
         if(!win) {
             setTimeout(() => {
                 clearColor();
-            }, 300);
+            }, 700); // this will set the time before the next color blinks
         }
     }
 });
@@ -207,6 +208,7 @@ function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
      good = false;
 
+     // 15 is the maximum score
      if (playerOrder.length == 15 && good) {
          winGame();
      }
@@ -244,7 +246,8 @@ function check() {
 function winGame() {
     flashColor();
     turnCounter.innerHTML = "WIN!";
-    alert (myText);
+    alert (myText); /* I want to set that to be a form that register the 
+    player name and save it at the ranking section */
     on = false;
     win = true;
 }
