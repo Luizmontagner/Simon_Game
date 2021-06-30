@@ -73,7 +73,7 @@ function play() {
     turn = 1;
     turnCounter.innerHTML = 1;
     good = true;
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 15; i++) {
         order.push(Math.floor(Math.random() * 4) + 1);
     }
     compTurn = true;
