@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 
 body {
   display: flex;
   justify-content: center;
   font-family: 'Big Shoulders Stencil Display', cursive;
   background-color: rgb(77, 62, 62);
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  height: 100%;
 }
+
+#background-image {
+    background: url('https://i.imgur.com/jUU6wPK.jpg') no-repeat center center fixed;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
 
 /* Navbar */
 
@@ -85,7 +103,7 @@ body {
 
 .button:hover{
     background-color: #BBC2CC;
-    color: #1291CF;
+    color: rgb(40, 174, 252);
 }
 
 #switches {
@@ -98,7 +116,7 @@ body {
 .text2 {
   margin-left: 170px;
   margin-top: 60px;
-  color: #1291CF;
+  color: rgb(40, 174, 252);;
   font-weight: 900;
   font-size: 1.4em;
   font-family: 'Big Shoulders Stencil Display', cursive;
@@ -108,7 +126,7 @@ body {
   font-family: 'Big Shoulders Stencil Display', cursive;
   margin-left: 68px;
   margin-top: 120px;
-  color: #1291CF;
+  color: rgb(40, 174, 252);;
   text-transform: uppercase;
   font-size: 1.6em;
 }
@@ -122,12 +140,10 @@ body {
 /* Title */
 #title {
   font-family: 'Big Shoulders Stencil Display', cursive;  
-  margin-bottom: 60px;
-  position: absolute;
+
   font-size: 65px;
-  margin-left: 35px;
-  margin-top: 10px;
-  color: #1291CF;
+
+  color: rgb(40, 174, 252);;
 }
 
 /* Score */
@@ -163,7 +179,7 @@ body {
   text-align: center;
   margin-top: 150px;
   font-family: 'Big Shoulders Stencil Display', cursive;
-  color: #1291CF;
+  color: rgb(40, 174, 252);;
   text-transform: uppercase;
 }
 
