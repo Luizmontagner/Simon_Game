@@ -18,7 +18,7 @@ body {
 }
 
 #background-image {
-    background: url('https://i.imgur.com/jUU6wPK.jpg') no-repeat center center fixed;
+    background: url('https://i.imgur.com/G9C1Kef.jpg') no-repeat center center fixed;
     min-height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -115,7 +115,7 @@ body {
 
 .text2 {
   margin-left: 115px;
-  margin-top: 50px;
+  margin-top: 30px;
   color: rgb(40, 174, 252);;
   font-weight: 900;
   font-size: 1.4em;
@@ -126,7 +126,7 @@ body {
   font-family: 'Big Shoulders Stencil Display', cursive;
   margin-left: 15px;
   margin-top: 80px;
-  color: rgb(40, 174, 252);;
+  color: #28aefc;;
   text-transform: uppercase;
   font-size: 1.6em;
 }
@@ -153,13 +153,13 @@ body {
   color: #ff0000;
   font-family: 'Big Shoulders Stencil Display', cursive;
   font-size: 30px;
-  height: 60px;
+  height: 40px;
   width: 70px;
-  margin-left: 110px;
+  margin-left: 105px;
   margin-top: -5px;
   text-align: center;
   vertical-align: middle;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 
