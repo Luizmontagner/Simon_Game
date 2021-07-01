@@ -108,14 +108,14 @@ body {
 
 #switches {
   position: absolute;
-  margin-left: 50px;
-  margin-top: 30px;
+  margin-left: -5px;
+  margin-top: 15px;
 }
 
 
 .text2 {
-  margin-left: 170px;
-  margin-top: 60px;
+  margin-left: 115px;
+  margin-top: 50px;
   color: rgb(40, 174, 252);;
   font-weight: 900;
   font-size: 1.4em;
@@ -124,8 +124,8 @@ body {
 
 .text1 {
   font-family: 'Big Shoulders Stencil Display', cursive;
-  margin-left: 68px;
-  margin-top: 120px;
+  margin-left: 15px;
+  margin-top: 80px;
   color: rgb(40, 174, 252);;
   text-transform: uppercase;
   font-size: 1.6em;
@@ -155,11 +155,11 @@ body {
   font-size: 30px;
   height: 60px;
   width: 70px;
-  margin-left: 162px;
-  margin-top: 5px;
+  margin-left: 110px;
+  margin-top: -5px;
   text-align: center;
   vertical-align: middle;
-  line-height: 60px;
+  line-height: 30px;
 }
 
 
@@ -174,24 +174,15 @@ body {
   display: none !important;
 }
 
-.heading {
-  font-size: 3em;
-  text-align: center;
-  margin-top: 150px;
-  font-family: 'Big Shoulders Stencil Display', cursive;
-  color: rgb(40, 174, 252);;
-  text-transform: uppercase;
-}
-
 /* Squares */
 .tile-container {
   display: grid;
-  grid-template-rows: 180px 180px;
-  grid-template-columns: 180px 180px;
-  grid-gap: 25px;
+  grid-template-rows: 130px 130px;
+  grid-template-columns: 130px 130px;
+  grid-gap: 10px;
   position: relative;
-  margin-top: 150px;
-  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 5px;
 }
 
 .unclickable {
