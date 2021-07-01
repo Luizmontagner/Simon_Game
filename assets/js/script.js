@@ -21,8 +21,10 @@ let on = false;
 // it will say if the player won the game
 let win;
 
+let myText = "You Win!"
+
 // it keep the score of the player displayed 
-let myText = "Enter your name";
+let ranking;
 
 // selected all css ID's using querySelector
 let turnCounter = document.querySelector("#turn");
@@ -33,11 +35,12 @@ let bottomRight = document.querySelector("#bottomright");
 let strictButton = document.querySelector("#strict");
 let onButton = document.querySelector("#on");
 let startButton = document.querySelector("#start");
+let rakingCounter = document.querySelector("#ranking");
 
 strictButton.addEventListener('click', () => {
     if (strictButton.checked == true) {
       strict = true;
-      let audio = document.getElementById("clip2");
+      let audio = document.getElementById("clip1");
       audio.play();  
     } else {
         strict = false;
@@ -209,7 +212,7 @@ function check() {
      good = false;
 
      // 15 is the maximum score
-     if (playerOrder.length == 15 && good) {
+     if (playerOrder.length == 2 && good) {
          winGame();
      }
 
@@ -246,10 +249,10 @@ function check() {
 function winGame() {
     flashColor();
     turnCounter.innerHTML = "WIN!";
+    rankingCounter.innerHTML = 'venceu'
     alert (myText); /* I want to set that to be a form that register the 
     player name and save it at the ranking section */
     on = false;
     win = true;
 }
-
 
