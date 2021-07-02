@@ -20,7 +20,7 @@ let noise = true;
 let on = false;
 // it will say if the player won the game
 let win;
-
+// it wil be an alert box 
 let myText = "You Win!"
 
 // it keep the score of the player displayed 
@@ -35,7 +35,6 @@ let bottomRight = document.querySelector("#bottomright");
 let strictButton = document.querySelector("#strict");
 let onButton = document.querySelector("#on");
 let startButton = document.querySelector("#start");
-let rakingCounter = document.querySelector("#ranking");
 
 strictButton.addEventListener('click', () => {
     if (strictButton.checked == true) {
@@ -55,7 +54,7 @@ onButton.addEventListener('click', () => {
     audio.play();
   } else {
     on = false;
-    turnCounter.innerHTML = "";
+    turnCounter.innerHTML = "-";
     clearColor();
     clearInterval(intervalId);
   }
@@ -212,7 +211,7 @@ function check() {
      good = false;
 
      // 15 is the maximum score
-     if (playerOrder.length == 2 && good) {
+     if (playerOrder.length == 15 && good) {
          winGame();
      }
 
