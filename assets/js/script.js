@@ -249,9 +249,6 @@ function check() {
 function winGame() {
     flashColor();
     turnCounter.innerHTML = "WIN!";
-    rankingCounter.innerHTML = 'venceu'
-    alert (myText); /* I want to set that to be a form that register the 
-    player name and save it at the ranking section */
     on = false;
     win = true;
 }

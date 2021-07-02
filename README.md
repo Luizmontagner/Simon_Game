@@ -1,10 +1,10 @@
 # Simon Game !
-![Mokeup image]()
+![Mokeup image](https://i.imgur.com/o8myK9T.png)
 
 ## Goal for this project
 
-Welcome to Simon Game! this is a game well known to people of all ages and now you can play it online. 
-In the game you can select the strict mode that will make the game more challenging and you can also record your name in the ranking
+Welcome to Simon Game! This is a well known game to people of all ages and now you can play it online. 
+In the game you can select the strict mode that will make the game more challenging and you can also record your name in the ranking.
 
 Thank you for visiting my project! If you have any feedback or questions, head over to my GitHub contact details and feel free to reach out to me.
 
@@ -103,7 +103,7 @@ For he background I've used a dark color to give a personal touch.
 #### Structure
 
 I have chosen to use [Bootstrap](https://getbootstrap.com/) to create the navbar of my website. 
-For the game I've based myself on [Free Code Camp](https://www.freecodecamp.org/ "Free Code Camp") code.
+For the game I've based myself on [Free Code Camp](https://www.freecodecamp.org/ "Free Code Camp") and [Freshman](https://freshman.tech/simon-game/ "Freshman") codes.
 
 [Back to Top](#table-of-contents)
 
@@ -118,9 +118,9 @@ The website will be easy to navigate by using the navigation bar or by scrolling
 You can find my wireframes below:
 
 
-### [Desktop Wireframe]()
-### [Tablet Wireframe]()
-### [Mobile Wireframe]()
+### [Desktop Wireframe](https://i.imgur.com/iObQqet.png)
+### [Tablet Wireframe](https://i.imgur.com/1IF1Fj3.png)
+### [Mobile Wireframe](https://i.imgur.com/1IF1Fj3.png)
 
 [Back to Top](#table-of-contents)
 
@@ -140,7 +140,7 @@ to let the user exactly know where they are located on the site. For this to wor
 
 ## Features to be implemented
 
-- Automatic socore register on the ranking section.
+- Automatic score register on the ranking section.
 - Terms and Conditions.
 - Different themes.
 
@@ -203,7 +203,22 @@ All the links work properly and the scrollspy gives a clear view on where you ar
 * **Verdict**    
 The test has passed all the criteria and works like planned.
 
+### Game Java Script
 
+* **Implementation**  
+I've watched several JavaScript tutorials in order to understand how to make the game work. I took a little piece of each tutorial and built a game with my personality.
+
+* **Test** 
+
+    I've played the game several times in both game modes.
+
+* **Result**  
+
+    The game has runned correctly from stage one to fifteen.
+
+* **Verdict** 
+    
+    The game is ready to play.    
 
 [Back to Top](#table-of-contents)
 
@@ -216,20 +231,8 @@ The test has passed all the criteria and works like planned.
     The game should make a 'beep' when the button On and the button Stric is clicked.
 
 * **Verdict**   
-    
 
-#### Icons
-
-
-* **Bug**  
-    The social media icons didn't show nicely on mobile. One appeared below the other 2 instead of all 3 next to each other.
-
-* **Fix**  
-    Reduced the font-size and padding which resolved the issue immediately.
-
-* **Verdict**
-
-    Icons now show nicely next to each other on all devices and browsers.
+    After check the audio path file, it is working now.
 
 #### Hamburger Button
 
@@ -275,6 +278,7 @@ To run the project locally:
 I have used the following websites to gather ideas and information for the overall content of my website: 
 
 * [Free Code Camp](https://www.freecodecamp.org/ "Free Code Camp")
+* [Freshman](https://freshman.tech/simon-game/ "Freshman")
 
 From [Canva](https://canva.com/) I have used all the images for my website. For the logo image I also built it on [Canva](https://canva.com/).
 
